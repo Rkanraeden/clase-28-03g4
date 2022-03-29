@@ -18,14 +18,13 @@ def scan_addicts2(arr)
         # recorrer arr entregado para llenar nuevo array
         num = arr.count
         num.times do |i|
-            next if arr[i].class != Integer
+            next if arr[i].class!=Integer
             if arr[i] <90
                 new_arr << "bien"
             elsif arr[i] < 180 and arr[i] > 90
                 new_arr << "mejorable"
             elsif arr[i] >=180
                 new_arr.push("mal")
-            entregado
             end
         end
         # debemos hacer un return explicito
